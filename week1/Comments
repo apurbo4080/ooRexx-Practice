@@ -1,0 +1,6 @@
+/* practice number variables and simple math */
+Studyhoursperweek = 11
+Totalweeks = 4
+/* THE computer multipies these two variables together*/
+Totalstudyhours = Studyhoursperweek * Totalweeks
+SAY "Total Study Hours:" Totalstudyhours
