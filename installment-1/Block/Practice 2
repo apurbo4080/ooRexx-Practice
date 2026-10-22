@@ -1,0 +1,6 @@
+/* A simple block printing a task description */
+DO
+SAY "Working on my university task"
+SAY "Keeping it simple"
+END
+exit
