@@ -1,0 +1,10 @@
+/* GitHub_File_Name: 01_AbstractDatatype.rex */
+g1 = .Birthday~New
+g1~date = "20320901"
+g1~time = "16:00"
+SAY "Birthday 1:" g1~date "at" g1~time
+EXIT
+
+::CLASS Birthday
+::ATTRIBUTE date
+::ATTRIBUTE time
