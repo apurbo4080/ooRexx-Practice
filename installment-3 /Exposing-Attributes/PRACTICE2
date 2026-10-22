@@ -1,0 +1,4 @@
+/* Example 2: Fuel Refill Track */
+::METHOD addFuel
+  EXPOSE fuelLevel
+  fuelLevel = fuelLevel + 20
