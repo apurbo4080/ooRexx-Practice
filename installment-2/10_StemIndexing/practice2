@@ -1,0 +1,8 @@
+/* Practice 1 */
+fruit.1 = "Apple"
+fruit.2 = "Banana"
+fruit.3 = "Orange"
+fruit.0 = 3
+DO i=1 TO fruit.0
+  SAY fruit.i
+END
