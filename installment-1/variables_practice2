@@ -1,0 +1,5 @@
+/* Practice 2: Showing that 'name' and 'NAME' are the same variable */
+name = "Apurbo"
+NAME = name "is practicing code."
+say name
+exit
