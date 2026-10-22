@@ -1,0 +1,13 @@
+/* Practice 2: Database Connection Release */
+db = .Database~New("SQL_DB")
+DROP db
+CALL SysSleep(1)
+EXIT
+
+::CLASS Database
+::METHOD INIT
+  EXPOSE dbName
+  USE ARG dbName
+::METHOD UNINIT
+  EXPOSE dbName
+  SAY "Released link connection to:" dbName
