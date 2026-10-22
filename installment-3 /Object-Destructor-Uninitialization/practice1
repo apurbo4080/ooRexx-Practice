@@ -1,0 +1,4 @@
+/* Example 1: Lecture Destruction Intercept */
+::METHOD UNINIT
+  EXPOSE firstName
+  SAY "Object for" firstName "is being cleared."
