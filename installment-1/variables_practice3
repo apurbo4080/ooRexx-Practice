@@ -1,0 +1,6 @@
+/* Practice 3: Joining words together using a space or || operator */
+part1 = "Object"
+part2 = "Oriented"
+fullString = part1 part2 "Rexx"
+say fullString
+exit
