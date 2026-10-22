@@ -1,0 +1,12 @@
+/* GitHub_File_Name: 03_ConstructorInit.rex */
+p1 = .Person~New("Albert", "Einstein", 45000)
+SAY p1~firstName p1~familyName "salary:" p1~salary
+EXIT
+
+::CLASS Person
+::METHOD INIT
+  EXPOSE firstName familyName salary
+  USE ARG firstName, familyName, salary
+::ATTRIBUTE firstName
+::ATTRIBUTE familyName
+::ATTRIBUTE salary
