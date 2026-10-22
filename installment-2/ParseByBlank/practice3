@@ -1,0 +1,7 @@
+/* Practice 1 */
+info = " Doe John 25 Vienna/Austria"
+PARSE VAR info lastName name age city
+SAY lastName
+SAY name
+SAY age
+SAY city
