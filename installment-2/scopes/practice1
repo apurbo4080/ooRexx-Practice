@@ -1,0 +1,12 @@
+/* Lecture Slide Code Example */
+a = 1
+b = 2
+SAY "a:" a "b:" b
+CALL calc
+SAY "a:" a "b:" b
+EXIT
+
+calc :
+a = a * 2
+b = b * 3 / 4
+RETURN
