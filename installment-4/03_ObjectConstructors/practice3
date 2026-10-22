@@ -1,0 +1,16 @@
+/* Practice 2: Complete Automobile Catalog Program */
+car1 = .Car~New("Tesla", "Red", 45000)
+car2 = .Car~New("BMW", "Black", 55000)
+
+SAY "Inventory 1:" car1~color car1~brand "priced at" car1~price "Euros"
+SAY "Inventory 2:" car2~color car2~brand "priced at" car2~price "Euros"
+EXIT
+
+::CLASS Car
+::METHOD INIT
+  EXPOSE brand color price
+  USE ARG brand, color, price
+
+::ATTRIBUTE brand
+::ATTRIBUTE color
+::ATTRIBUTE price
