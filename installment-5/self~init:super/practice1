@@ -1,0 +1,13 @@
+/* GitHub_File_Name: 04_SuperConstructor.rex */
+p1 = .Person~New("Albert", "Einstein", 45000)
+SAY p1~firstName "initialized via superclass connection."
+EXIT
+
+::CLASS Person
+::METHOD INIT
+  EXPOSE firstName familyName salary
+  USE ARG firstName, familyName, salary
+  self~init:super
+::ATTRIBUTE firstName
+::ATTRIBUTE familyName
+::ATTRIBUTE salary
