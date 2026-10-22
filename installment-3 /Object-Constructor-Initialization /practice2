@@ -1,0 +1,5 @@
+/* Example 2: Simple Coordinates Constructor */
+::CLASS Point
+::METHOD INIT
+  EXPOSE x y
+  USE ARG x, y
