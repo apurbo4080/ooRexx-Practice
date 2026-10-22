@@ -1,0 +1,9 @@
+/* GitHub_File_Name: 09_ClassResources.rex */
+SAY .resources~info
+EXIT
+
+::RESOURCE info
+*******************************************************
+* Eat an apple a day to keep the doctor away! ;) *
+*******************************************************
+::END
