@@ -1,0 +1,6 @@
+SAY time() /* invoke our custom routine */
+SAY "TIME"() /* invoke the original built-in time function */
+EXIT
+
+TIME :
+RETURN "Time function has been customized!"
