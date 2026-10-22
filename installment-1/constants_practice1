@@ -1,0 +1,4 @@
+/* Simple fixed tax value example */
+TaxRate = 0.20
+say TaxRate
+exit
