@@ -1,0 +1,12 @@
+/* Practice 2 */
+val1 = 50
+val2 = 60
+SAY "val1:" val1 "val2:" val2
+CALL update
+SAY "val1:" val1 "val2:" val2
+EXIT
+
+update: PROCEDURE EXPOSE val1
+val1 = val1 + 10
+val2 = 99
+RETURN
