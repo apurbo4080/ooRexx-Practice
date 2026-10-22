@@ -1,0 +1,15 @@
+/* Main program setup - constructing instance objects */
+g1 = .Birthday~New
+g1~date = "20320901"
+g1~time = "16:00"
+
+g2 = .Birthday~New~~date("20360229")~~time("19:19")
+
+SAY "First birthday details:" g1~date "at" g1~time
+SAY "Second birthday details:" g2~date "at" g2~time
+EXIT
+
+/* Class blueprint definitions */
+::CLASS Birthday
+::ATTRIBUTE date
+::ATTRIBUTE time
