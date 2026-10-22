@@ -1,0 +1,6 @@
+/* ooRexx Slide Page 17 Example */
+a = 1
+b = 2
+if a >= b then say "True"
+else say "False"
+exit
