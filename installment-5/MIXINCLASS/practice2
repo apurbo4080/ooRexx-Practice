@@ -1,0 +1,20 @@
+/* Practice 1: Flying Car Smartphone Concept */
+.FlyingCar~New("AeroDrive")~activate
+EXIT
+
+::CLASS machine
+::ATTRIBUTE name
+::METHOD INIT
+  self~name = ARG(1)
+
+::CLASS LandMachine MIXINCLASS machine
+::METHOD roll
+  SAY self~name": rolling down track"
+
+::CLASS AirMachine MIXINCLASS machine
+::METHOD soar
+  SAY self~name": soaring through sky"
+
+::CLASS FlyingCar SUBCLASS LandMachine INHERIT AirMachine
+::METHOD activate
+  self ~~roll ~~soar
