@@ -1,0 +1,14 @@
+/* Practice 1 */
+x = 10
+y = 20
+SAY "x:" x "y:" y
+CALL test
+SAY "x:" x "y:" y
+EXIT
+
+test: PROCEDURE
+x = 2
+y = 4
+x = x + 10
+y = y + 20
+RETURN
