@@ -1,0 +1,14 @@
+/* Lecture Slide Code Example */
+a = 1
+b = 2
+SAY "a:" a "b:" b
+CALL calc
+SAY "a:" a "b:" b
+EXIT
+
+calc: PROCEDURE /* no access to global "a" und "b" ! */
+a = 5 /* hence, "a" must be defined locally */
+b = 6 /* hence, "b" must be defined locally */
+a = a * 2
+b = b * 3 / 4
+RETURN
