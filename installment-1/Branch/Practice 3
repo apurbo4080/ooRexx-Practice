@@ -1,0 +1,8 @@
+/* Simple select structure using numbers */
+grade = 1
+SELECT
+    WHEN grade = 1 THEN SAY "Excellent mark."
+    WHEN grade = 2 THEN SAY "Good mark."
+    OTHERWISE SAY "Passing mark."
+END
+exit
