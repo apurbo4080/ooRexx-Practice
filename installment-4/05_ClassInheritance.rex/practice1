@@ -1,0 +1,13 @@
+/* Practice 1: Complete Zoo Animal Classification System Program */
+.Cat~New~~name("Felix")~speak
+.Lion~New~~name("Simba")~speak
+EXIT
+
+::CLASS Cat SUBCLASS Object
+::ATTRIBUTE name
+::METHOD speak
+  SAY self~name": 'Meow' - Standard domestic feline communication."
+
+::CLASS Lion SUBCLASS Cat
+::METHOD speak
+  SAY self~name": 'ROAARRR!' - Wild apex predator communication roar."
