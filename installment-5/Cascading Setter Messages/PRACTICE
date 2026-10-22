@@ -1,0 +1,8 @@
+/* GitHub_File_Name: 02_CascadingMessages.rex */
+g2 = .Birthday~New~~date("20360229")~~time("19:19")
+SAY "Birthday 2:" g2~date "at" g2~time
+EXIT
+
+::CLASS Birthday
+::ATTRIBUTE date
+::ATTRIBUTE time
