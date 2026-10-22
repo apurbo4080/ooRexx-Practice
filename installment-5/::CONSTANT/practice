@@ -1,0 +1,8 @@
+/* GitHub_File_Name: 08_ClassConstants.rex */
+SAY "Pi value directly from Class:" .MyClass~pi
+o = .MyClass~New
+SAY "Pi value inside object instance:" o~pi
+EXIT
+
+::CLASS MyClass
+::CONSTANT pi 3.14159
