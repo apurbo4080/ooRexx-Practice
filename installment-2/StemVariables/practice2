@@ -1,0 +1,6 @@
+/* Practice 1 */
+student.name = "Anna"
+student.id = 12345
+vienna.district.1 = "Innere Stadt"
+SAY student.name student.id
+SAY vienna.district.1
