@@ -1,0 +1,2 @@
+/* Example 1: Lecture Slide Cascading String */
+SAY "ABC"~~REVERSE
