@@ -1,0 +1,2 @@
+/* Example 1: Printing a Reversed String */
+SAY "ABC"~REVERSE
