@@ -1,0 +1,2 @@
+/* Example 2: Fetching an Attribute Value */
+SAY p1~salary
