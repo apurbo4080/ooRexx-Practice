@@ -1,0 +1,8 @@
+/* A Rexx-Programm with an internal routine named 'TIMESTAMP' */
+CALL TimeStamp /* call a subroutine */
+CALL SysSleep 5 /* sleep 5 seconds */
+CALL TimeStamp /* call a subroutine */
+EXIT /* exit program */
+TimeStamp : /* label */
+SAY "It is rather late ..."
+RETURN
