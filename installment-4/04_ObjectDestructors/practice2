@@ -1,0 +1,19 @@
+/* Practice 1: Complete Database Session Timeout Simulation */
+session = .Session~New("ActiveUser_404")
+SAY "Session token initialized for:" session~token
+
+DROP session
+CALL SysSleep(2)
+SAY "Session manager shut down completed safely."
+EXIT
+
+::CLASS Session
+::METHOD INIT
+  EXPOSE token
+  USE ARG token
+
+::METHOD UNINIT
+  EXPOSE token
+  SAY "Security Alert: Session reference for ["token"] disconnected and purged."
+
+::ATTRIBUTE token
