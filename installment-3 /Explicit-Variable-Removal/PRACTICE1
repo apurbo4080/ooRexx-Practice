@@ -1,0 +1,3 @@
+/* Example 1: Clearing Lecture Objects */
+DROP p1
+DROP p2
