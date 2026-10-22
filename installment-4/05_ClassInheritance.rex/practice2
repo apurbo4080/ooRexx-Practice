@@ -1,0 +1,13 @@
+/* Practice 2: Complete Vehicle Propulsion System Program */
+.Vehicle~New~~model("Standard Sedan")~move
+.RaceCar~New~~model("Formula 1 Bolide")~move
+EXIT
+
+::CLASS Vehicle SUBCLASS Object
+::ATTRIBUTE model
+::METHOD move
+  SAY self~model": Moving forward at standard public highway speeds."
+
+::CLASS RaceCar SUBCLASS Vehicle
+::METHOD move
+  SAY self~model": Accelerating to 300 km/h down the straight track!"
