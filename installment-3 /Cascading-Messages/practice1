@@ -1,0 +1,2 @@
+/* Example 2: Sequential Attribute Setup */
+p1 = .Person~NEW~~firstName("Vera")~~salary(25000)
