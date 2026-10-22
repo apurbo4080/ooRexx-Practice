@@ -1,0 +1,7 @@
+/* Lecture Slide Code Example */
+file.1 = "max.doc"
+file.2 = "moritz.doc"
+file.0 = 2 /* maximum number of "elements" */
+DO i=1 TO file.0
+  SAY file.i /* "i" in this context is also called "stem index" */
+END
