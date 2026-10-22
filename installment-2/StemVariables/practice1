@@ -1,0 +1,8 @@
+/* Lecture Slide Code Example */
+a.n = "aha"
+a.OnE = 1
+a.1 = "Richard"
+Austria.Tyrol = 750000
+Austria.Tyrol.Innsbruck = 135000
+SAY a.1 a.n a.OnE
+SAY Austria.Tyrol
