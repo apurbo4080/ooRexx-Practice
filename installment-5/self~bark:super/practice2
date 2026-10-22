@@ -1,0 +1,13 @@
+/* Practice 1: Electric Vehicle Engine Drive */
+.EV~New~~model("Model 3")~drive
+EXIT
+
+::CLASS Vehicle
+::ATTRIBUTE model
+::METHOD drive
+  SAY self~model": Base propulsion system online."
+
+::CLASS EV SUBCLASS Vehicle
+::METHOD drive
+  SAY self~model": Drawing power from battery cell."
+  self~drive:super
