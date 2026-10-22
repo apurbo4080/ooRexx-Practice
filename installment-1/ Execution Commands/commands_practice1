@@ -1,0 +1,5 @@
+/* ooRexx Slide Page 29 Example */
+ADDRESS SYSTEM "echo Hello"
+a = "echo World"
+ADDRESS SYSTEM a
+exit
