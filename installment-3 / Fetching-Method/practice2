@@ -1,0 +1,5 @@
+/* Example 2: Changing Item Color Parameter */
+::METHOD paintCar
+  EXPOSE color
+  USE ARG newColor
+  color = newColor
