@@ -1,0 +1,3 @@
+/* Example 2: File Handle Closing Destructor */
+::METHOD UNINIT
+  SAY "Closing connected connections down safely."
