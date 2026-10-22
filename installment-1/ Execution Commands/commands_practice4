@@ -1,0 +1,4 @@
+/* Running a basic echo greeting using system address controls */
+runMe = "echo 'Assignment 1 completed successfully'"
+ADDRESS SYSTEM runMe
+exit
