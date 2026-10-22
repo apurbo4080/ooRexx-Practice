@@ -1,0 +1,13 @@
+/* Practice 1 */
+x = 10
+y = 20
+SAY "x:" x "y:" y
+CALL share
+SAY "x:" x "y:" y
+EXIT
+
+share: PROCEDURE EXPOSE y
+x = 2
+x = x + 5
+y = y + 100
+RETURN
