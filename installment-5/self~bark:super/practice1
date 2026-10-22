@@ -1,0 +1,13 @@
+/* GitHub_File_Name: 06_SuperMethodCall.rex */
+.BigDog~New~~name("Grobian")~Bark
+EXIT
+
+::CLASS Dog
+::ATTRIBUTE name
+::METHOD Bark
+  SAY self~name": 'Wuff Wuff'"
+
+::CLASS BigDog SUBCLASS Dog
+::METHOD Bark
+  SAY self~name": 'WUFFF!'"
+  self~bark:super
