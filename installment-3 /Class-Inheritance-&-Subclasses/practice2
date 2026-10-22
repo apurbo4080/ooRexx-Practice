@@ -1,0 +1,4 @@
+/* Example 2: Vehicle Management Classification */
+::CLASS Truck SUBCLASS Vehicle
+::METHOD blowHorn
+  SAY "HONK HHOOONK!"
