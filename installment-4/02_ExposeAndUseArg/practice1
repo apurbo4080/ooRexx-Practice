@@ -1,0 +1,18 @@
+/* Practice 1: Complete Bank Transaction Management Program */
+account = .BankAccount~New
+account~holder = "John Doe"
+account~balance = 1500
+
+SAY "Account holder:" account~holder "Initial Balance:" account~balance "Euros"
+account~deposit(450)
+SAY "Account holder:" account~holder "Updated Balance:" account~balance "Euros"
+EXIT
+
+::CLASS BankAccount
+::ATTRIBUTE holder
+::ATTRIBUTE balance
+
+::METHOD deposit
+  EXPOSE balance
+  USE ARG amount
+  balance = balance + amount
