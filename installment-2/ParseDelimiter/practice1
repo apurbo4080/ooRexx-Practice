@@ -1,0 +1,7 @@
+/* Lecture Slide Code Example */
+text = "Sattler;Cilli;Stumm;Zillertal/Tirol"
+PARSE VAR text famName ";" firstName ";" city
+SAY famName
+SAY firstName
+SAY city
+EXIT
