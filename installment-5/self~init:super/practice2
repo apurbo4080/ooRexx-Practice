@@ -1,0 +1,13 @@
+/* Practice 1: Manager Level Super Call */
+m1 = .Manager~New("Alice", "Tech")
+EXIT
+
+::CLASS Employee
+::METHOD INIT
+  SAY "Employee root initialized"
+
+::CLASS Manager SUBCLASS Employee
+::METHOD INIT
+  USE ARG name, dept
+  self~init:super
+  SAY "Manager" name "assigned to" dept
