@@ -1,0 +1,5 @@
+/* Practice 1 */
+data = "Computer Science / Technical University"
+PARSE VAR data course "/" location
+SAY course
+SAY location
