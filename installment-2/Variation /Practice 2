@@ -1,0 +1,6 @@
+CALL BuildGreeting
+SAY "The message in RESULT is:" RESULT
+EXIT
+
+BuildGreeting:
+RETURN "Hello Friend"
