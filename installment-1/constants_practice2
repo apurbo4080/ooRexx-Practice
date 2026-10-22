@@ -1,0 +1,4 @@
+/* Simple fixed year value example */
+CurrentYear = 2026
+say CurrentYear
+exit
