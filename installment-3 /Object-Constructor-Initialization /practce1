@@ -1,0 +1,5 @@
+/* Example 1: Lecture Person Constructor */
+::CLASS Person
+::METHOD INIT
+  EXPOSE firstName familyName
+  USE ARG firstName, familyName
