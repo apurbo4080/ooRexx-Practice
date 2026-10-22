@@ -1,6 +1,0 @@
-CALL PickColor
-SAY "The chosen color in RESULT is:" RESULT
-EXIT
-
-PickColor:
-RETURN "Blue"
