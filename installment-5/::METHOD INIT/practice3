@@ -1,0 +1,11 @@
+/* Practice 2: Course Constructor */
+c1 = .Course~New("FWPAD", "Room3")
+SAY c1~name "is held in" c1~room
+EXIT
+
+::CLASS Course
+::METHOD INIT
+  EXPOSE name room
+  USE ARG name, room
+::ATTRIBUTE name
+::ATTRIBUTE room
