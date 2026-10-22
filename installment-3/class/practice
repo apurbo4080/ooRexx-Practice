@@ -1,4 +1,0 @@
-/* Example 1: Lecture Slide Birthday Schema */
-::CLASS Birthday
-::ATTRIBUTE date
-::ATTRIBUTE time
