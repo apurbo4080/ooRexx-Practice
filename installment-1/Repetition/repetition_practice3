@@ -1,0 +1,5 @@
+/* Simple loop index variable printer practice */
+DO i = 1 TO 3
+SAY "Current counter row position item value is:" i
+END
+exit
