@@ -1,0 +1,4 @@
+/* Example 1: Lecture Slide Dog Hierarchy */
+::CLASS BigDog SUBCLASS Dog
+::METHOD Bark
+  SAY "WUFFF! WUFFF!!"
