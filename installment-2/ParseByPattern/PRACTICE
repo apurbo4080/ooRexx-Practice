@@ -1,0 +1,5 @@
+/* Lecture Slide Code Example */
+text = " Ruaniger Annelle Stumm Zillertal / Tirol "
+PARSE VAR text before "/" after
+SAY before
+SAY after
