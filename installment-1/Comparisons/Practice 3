@@ -1,0 +1,6 @@
+/* Simple strict inequality check practice */
+word1 = "Apple"
+word2 = "Banana"
+if word1 \== word2 then say "Words are strictly different"
+else say "Words are strictly same"
+exit
