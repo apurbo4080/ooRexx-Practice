@@ -1,0 +1,17 @@
+/* Main program setup - immediate field initialization during object creation */
+p1 = .Person~New("Albert", "Einstein", 45000)
+p2 = .Person~New("Vera", "Withanyname", 25000)
+
+SAY p1~firstName p1~familyName "makes" p1~salary
+SAY p2~firstName p2~familyName "makes" p2~salary
+EXIT
+
+/* Blueprint Definition with Constructor Routine */
+::CLASS Person
+::METHOD INIT
+  EXPOSE firstName familyName salary
+  USE ARG firstName, familyName, salary
+
+::ATTRIBUTE firstName
+::ATTRIBUTE familyName
+::ATTRIBUTE salary
