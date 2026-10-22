@@ -1,0 +1,5 @@
+/* Simple score pass check practice */
+score = 60
+IF score >= 50 THEN SAY "Passed the test."
+ELSE SAY "Failed the test."
+exit
