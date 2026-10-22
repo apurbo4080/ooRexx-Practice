@@ -1,0 +1,8 @@
+/* Practice 2: Vehicle Specs */
+car = .Vehicle~New~~brand("Tesla")~~color("Red")
+SAY car~color car~brand
+EXIT
+
+::CLASS Vehicle
+::ATTRIBUTE brand
+::ATTRIBUTE color
