@@ -1,0 +1,10 @@
+/* ooRexx Slide Page 20 and 22 Example */
+DO 3
+SAY "Aua!"
+SAY "Oh!"
+END
+
+DO i = 1 TO 3
+SAY "Aua!"; SAY "Oh!" i
+END
+exit
