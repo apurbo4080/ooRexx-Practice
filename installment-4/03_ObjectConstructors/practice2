@@ -1,0 +1,16 @@
+/* Practice 1: Complete Student Course Enrollment Program */
+s1 = .Student~New("Anna Miller", "Data Analytics", 3.8)
+s2 = .Student~New("Max Schmidt", "Software Engineering", 3.5)
+
+SAY "Student:" s1~name "Major:" s1~major "GPA:" s1~gpa
+SAY "Student:" s2~name "Major:" s2~major "GPA:" s2~gpa
+EXIT
+
+::CLASS Student
+::METHOD INIT
+  EXPOSE name major gpa
+  USE ARG name, major, gpa
+
+::ATTRIBUTE name
+::ATTRIBUTE major
+::ATTRIBUTE gpa
