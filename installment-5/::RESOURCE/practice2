@@ -1,0 +1,9 @@
+/* Practice 1: HTML Banner Wrapper Chunks */
+SAY .resources~htmlBox
+EXIT
+
+::RESOURCE htmlBox
+<div>
+  <h1>Welcome to Modul University Vienna</h1>
+</div>
+::END
