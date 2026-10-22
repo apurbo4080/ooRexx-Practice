@@ -1,0 +1,19 @@
+/* Practice 2: Complete File Connection Disconnect Simulation */
+streamRef = .FileConnection~New("homework_data.csv")
+SAY "Target system background file tracking link assigned to:" streamRef~fileName
+
+DROP streamRef
+CALL SysSleep(2)
+SAY "Application system completely locked down."
+EXIT
+
+::CLASS FileConnection
+::METHOD INIT
+  EXPOSE fileName
+  USE ARG fileName
+
+::METHOD UNINIT
+  EXPOSE fileName
+  SAY "IO Notice: System has safely released file handle lock on ["fileName"]."
+
+::ATTRIBUTE fileName
