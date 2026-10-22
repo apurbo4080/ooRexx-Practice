@@ -1,0 +1,10 @@
+/* Practice 1: Product Storage */
+p1 = .Product~New
+p1~id = "P99"
+p1~price = 45
+SAY "Product:" p1~id "costs" p1~price
+EXIT
+
+::CLASS Product
+::ATTRIBUTE id
+::ATTRIBUTE price
