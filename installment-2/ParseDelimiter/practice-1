@@ -1,0 +1,8 @@
+/* Practice 1 */
+info = "Smith;Alice;Vienna;Austria"
+PARSE VAR info lastName ";" name ";" capital ";" country
+SAY lastName
+SAY name
+SAY capital
+SAY country
+EXIT
