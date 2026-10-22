@@ -1,0 +1,6 @@
+SAY date() /* invoke self programmed function below */
+SAY "DATE"() /* invoke the Rexx built-in function */
+EXIT
+
+DATE : /* "DATE" is in effect a Rexx function ! */
+RETURN "Date(), self programmed!"
