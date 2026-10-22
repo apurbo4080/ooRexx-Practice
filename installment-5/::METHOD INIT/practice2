@@ -1,0 +1,11 @@
+/* Practice 1: Book Constructor */
+b1 = .Book~New("RexxProg", 150)
+SAY b1~title "has" b1~pages "pages"
+EXIT
+
+::CLASS Book
+::METHOD INIT
+  EXPOSE title pages
+  USE ARG title, pages
+::ATTRIBUTE title
+::ATTRIBUTE pages
