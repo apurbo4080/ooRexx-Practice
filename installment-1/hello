@@ -1,0 +1,6 @@
+/* ooRexx Slide Page 9 Example */
+A = "Hello, my beloved world"
+a="Hello, my beloved variable"
+A = a "- changed again."
+say a
+exit
