@@ -1,0 +1,14 @@
+/* Practice 1: Complete Course Storage Program */
+c1 = .Course~New
+c1~title = "FWPAD"
+c1~room = "Room 3.12"
+
+c2 = .Course~New~~title("Data Science 1")~~room("Lab 2")
+
+SAY "Course 1:" c1~title "is in" c1~room
+SAY "Course 2:" c2~title "is in" c2~room
+EXIT
+
+::CLASS Course
+::ATTRIBUTE title
+::ATTRIBUTE room
