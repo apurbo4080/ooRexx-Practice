@@ -1,0 +1,27 @@
+/* Main program setup - testing garbage collection interception */
+p1 = .Person~New("Albert", "Einstein", 45000)
+p2 = .Person~New("Vera", "Withanyname", 25000)
+
+SAY "Objects active:" p1~firstName "and" p2~firstName
+
+/* Removing the reference pointers explicitly */
+DROP p1
+DROP p2
+
+/* Sleep to allow the system garbage collector time to execute UNINIT */
+CALL SysSleep(2)
+SAY "Main program execution section finished."
+EXIT
+
+::CLASS Person
+::METHOD INIT
+  EXPOSE firstName familyName salary
+  USE ARG firstName, familyName, salary
+
+::METHOD UNINIT
+  EXPOSE firstName familyName
+  SAY "Object Notification: <"firstName familyName"> is being purged from memory."
+
+::ATTRIBUTE firstName
+::ATTRIBUTE familyName
+::ATTRIBUTE salary
