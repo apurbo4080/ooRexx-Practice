@@ -1,0 +1,5 @@
+/* Example 1: Lecture Parameter Processing */
+::METHOD increaseSalary
+  EXPOSE salary
+  USE ARG amount
+  salary = salary + amount
