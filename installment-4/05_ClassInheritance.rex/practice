@@ -1,0 +1,21 @@
+/* Main program setup - testing polymorphic subclass behavior execution loops */
+.Dog~New~~name("Sweety")~Bark
+.BigDog~New~~name("Grobian")~Bark
+.LittleDog~New~~name("Arnie")~Bark
+EXIT
+
+/* Base Root Class Superclass */
+::CLASS Dog SUBCLASS Object
+::ATTRIBUTE name
+::METHOD Bark
+  SAY self~name": 'Wuff Wuff' - dispatched from Base Class Dog"
+
+/* Specialized First Subclass level */
+::CLASS BigDog SUBCLASS Dog
+::METHOD Bark
+  SAY self~name": 'WUFFF! WUFFF!! WUFFF!!!' - dispatched from Subclass BigDog"
+
+/* Specialized Second Subclass level */
+::CLASS LittleDog SUBCLASS Dog
+::METHOD Bark
+  SAY self~name": 'wuuf' - dispatched from Subclass LittleDog"
