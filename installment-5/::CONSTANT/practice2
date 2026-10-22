@@ -1,0 +1,7 @@
+/* Practice 2: Application Version Tracking */
+app = .App~New
+SAY "Running system on engine branch version:" app~version
+EXIT
+
+::CLASS App
+::CONSTANT version "v5.3.0"
