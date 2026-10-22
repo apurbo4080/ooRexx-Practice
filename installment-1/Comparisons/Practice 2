@@ -1,0 +1,6 @@
+/* Simple numerical equal comparison practice */
+x = 10
+y = 10
+if x = y then say "Numbers match"
+else say "Numbers do not match"
+exit
