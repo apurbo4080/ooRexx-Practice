@@ -1,0 +1,7 @@
+/* Practice 2 */
+user.1 = "admin"
+user.2 = "guest"
+user.0 = 2
+DO i=1 TO user.0
+  SAY user.i
+END
