@@ -1,0 +1,6 @@
+/* A simple block printing a status report */
+DO
+SAY "First statement inside the block"
+SAY "Second statement inside the block"
+END
+exit
