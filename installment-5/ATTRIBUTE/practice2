@@ -1,0 +1,10 @@
+/* Practice 2: User Settings */
+u1 = .User~New
+u1~name = "Guest"
+u1~role = "Visitor"
+SAY "User:" u1~name "is a" u1~role
+EXIT
+
+::CLASS User
+::ATTRIBUTE name
+::ATTRIBUTE role
