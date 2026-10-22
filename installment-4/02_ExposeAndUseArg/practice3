@@ -1,0 +1,18 @@
+/* Practice 2: Complete Gaming Character Stat Program */
+hero = .GameCharacter~New
+hero~heroName = "Geralt"
+hero~health = 100
+
+SAY hero~heroName "enters the arena with" hero~health "HP."
+hero~takeDamage(35)
+SAY hero~heroName "survives an ambush with" hero~health "HP."
+EXIT
+
+::CLASS GameCharacter
+::ATTRIBUTE heroName
+::ATTRIBUTE health
+
+::METHOD takeDamage
+  EXPOSE health
+  USE ARG damage
+  health = health - damage
