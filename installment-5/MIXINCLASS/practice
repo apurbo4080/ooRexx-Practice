@@ -1,0 +1,20 @@
+/* GitHub_File_Name: 07_MultipleInheritance.rex */
+.AmphibianVehicle~New("SwimCar")~show_off
+EXIT
+
+::CLASS Vehicle
+::ATTRIBUTE name
+::METHOD INIT
+  self~name = ARG(1)
+
+::CLASS RoadVehicle MIXINCLASS Vehicle
+::METHOD drive
+  SAY self~name": 'I drive now...'"
+
+::CLASS WaterVehicle MIXINCLASS Vehicle
+::METHOD swim
+  SAY self~name": 'I swim now...'"
+
+::CLASS AmphibianVehicle SUBCLASS RoadVehicle INHERIT WaterVehicle
+::METHOD show_off
+  self ~~drive ~~swim
