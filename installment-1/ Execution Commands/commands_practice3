@@ -1,0 +1,4 @@
+/* Storing a simple string command inside a variable runner */
+commandText = "echo 'Testing variable command address execution'"
+ADDRESS SYSTEM commandText
+exit
