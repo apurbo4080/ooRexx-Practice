@@ -1,0 +1,4 @@
+/* Simple fixed price value example */
+TicketPrice = 15
+say TicketPrice
+exit
