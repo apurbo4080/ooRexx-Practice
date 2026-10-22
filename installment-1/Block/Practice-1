@@ -1,0 +1,6 @@
+/* ooRexx Slide Page 14 Example */
+DO
+SAY "Hello,"
+SAY "world"
+END
+exit
