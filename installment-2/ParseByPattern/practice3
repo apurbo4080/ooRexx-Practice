@@ -1,0 +1,5 @@
+/* Practice 2 */
+record = "Item Number 505 - Available In Stock"
+PARSE VAR record product "-" status
+SAY product
+SAY status
