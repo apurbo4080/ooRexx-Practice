@@ -1,0 +1,8 @@
+/* Practice 1: Employee Records */
+emp = .Employee~New~~name("Bob")~~id("E5")
+SAY "Staff ID:" emp~id "is" emp~name
+EXIT
+
+::CLASS Employee
+::ATTRIBUTE name
+::ATTRIBUTE id
