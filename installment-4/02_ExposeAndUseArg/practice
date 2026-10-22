@@ -1,0 +1,25 @@
+/* Main program setup - calculating total structural costs */
+p1 = .Person~New
+p1~firstName = "Albert"
+p1~familyName = "Einstein"
+p1~salary = 45000
+
+p2 = .Person~New~~firstName("Vera")~~familyName("Withanyname")~~salary(25000)
+
+SAY p1~firstName p1~familyName "current salary:" p1~salary
+p1~increaseSalary(10000)
+SAY p1~firstName "new updated salary:" p1~salary
+
+SAY "Total company cost of salaries:" p1~salary + p2~salary
+EXIT
+
+/* Abstract Datatype Definition */
+::CLASS Person
+::ATTRIBUTE firstName
+::ATTRIBUTE familyName
+::ATTRIBUTE salary
+
+::METHOD increaseSalary
+  EXPOSE salary
+  USE ARG increase
+  salary = salary + increase
