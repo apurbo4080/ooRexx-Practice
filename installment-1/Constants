@@ -1,0 +1,4 @@
+/* ooRexx Slide Page 10 Example */
+Pi = 3.14159
+say Pi
+exit
