@@ -1,0 +1,12 @@
+/* Practice 1 */
+x = 10
+y = 20
+SAY "x:" x "y:" y
+CALL modify
+SAY "x:" x "y:" y
+EXIT
+
+modify :
+x = x + 5
+y = y + 10
+RETURN
