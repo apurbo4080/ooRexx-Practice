@@ -1,0 +1,6 @@
+/* Simple fixed loop repetition count practice */
+DO 3
+SAY "Hello student"
+SAY "Welcome to class"
+END
+exit
