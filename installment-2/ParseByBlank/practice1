@@ -1,0 +1,6 @@
+/* Lecture Slide Code Example */
+text = " Stiegler Seppl Stumm Zillertal/Tirol"
+PARSE VAR text famName firstName rest
+SAY famName
+SAY firstName
+SAY rest
