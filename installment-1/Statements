@@ -1,0 +1,8 @@
+/* ooRexx Slide Page 12 and 13 Example */
+/* Some comment */;
+SAY "Hello, my dear world";
+SAY "Hello," -
+"my"
+,
+"beloved world";
+exit
