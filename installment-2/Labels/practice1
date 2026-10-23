@@ -1,0 +1,11 @@
+SAY "STARTING THE PROGRAM"
+SIGNAL skip_part
+SAY " No,"
+ /*there are no specific predefined labels. Whatever valid name you write after
+     SIGNAL becomes the target, but you must create that corresponding
+     label in your code with a colon ( : ).
+     You can choose almost any name you want.
+     However, it does not automatically become a label just by typing it after SIGNAL.
+      You must manually type that same name somewhere else in your program followed by a colon*/
+ skip_part :
+ SAY " WE SUCCESSFULLY JUMPED HERE"
