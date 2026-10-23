@@ -1,0 +1,8 @@
+SAY "Step 1: Starting the main program."
+CALL celebrate
+SAY "Step 3: Back in the main program."
+EXIT
+
+celebrate:
+    SAY "Step 2: [Woohoo! This is inside the routine.]"
+    RETURN
