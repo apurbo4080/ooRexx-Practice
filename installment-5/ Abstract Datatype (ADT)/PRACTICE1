@@ -1,0 +1,9 @@
+/**/
+g1 = .Birthday~New
+g1~Date= "20320901"
+g1~Time= "16:00"
+g2=.Birthday~New~~"Date="("20360229")~~"Time="("19:19")
+SAY g1~date g2~date g1~time g2~time
+::CLASS Birthday
+::ATTRIBUTE date
+::ATTRIBUTE time
