@@ -1,0 +1,21 @@
+/**/
+p1 = .Person~New("Albert","Einstein","45000")
+p2 = .Person~New("Vera","Withanyname",25000)
+SAY p1~firstName p1~familyName p1~salary p2~firstName
+SAY p1~firstName p1~salary p1~~increaseSalary(10000)~salary
+DROP p1; DROP p2; CALL SysSleep( 15 ); SAY "Finish."
+::CLASS Person
+::METHOD INIT
+EXPOSE firstName familyName salary
+USE ARG firstName, familyName, salary
+self~init:super -- invoke constructor of superclass
+::METHOD UNINIT
+EXPOSE firstName familyName salary
+SAY "Object: <"firstName familyName salary"> is about to be destroyed."
+::ATTRIBUTE firstName
+::ATTRIBUTE familyName
+::ATTRIBUTE salary
+::METHOD increaseSalary
+EXPOSE salary
+USE ARG increase
+salary = salary + increase
